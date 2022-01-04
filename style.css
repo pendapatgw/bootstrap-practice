@@ -1,0 +1,682 @@
+/* daftar warna bootstrap */
+
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 13, 110, 253;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+}
+
+/* buat hp */
+@media (min-width: 0) and (max-width: 576px) {
+  .jumbotron {
+    background-image: url(assets/foto/network.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: 50%, 0;
+    position: relative;
+  }
+  .display-4 {
+    padding-top: 40%;
+  }
+  .display-4,
+  .lead {
+    color: var(--bs-light);
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .jumbotron::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+  }
+  .jumbotron .container {
+    z-index: 1;
+    position: relative;
+  }
+  /* buat category */
+  .olahraga1 {
+    width: 100%;
+    height: 10rem;
+    background-image: url(assets/foto/internet\ speed.jpg);
+    background-size: cover;
+    background-position: 0, 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .olahraga1 .judul {
+    color: var(--bs-light);
+    font-size: 20pt;
+    z-index: 1;
+    position: relative;
+
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+  }
+  .olahraga1 .isi {
+    font-size: 12pt;
+    z-index: 1;
+    position: relative;
+    color: var(--bs-light);
+    text-align: end;
+
+    text-align: center;
+
+    text-transform: capitalize;
+  }
+  .olahraga1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
+    position: absolute;
+    bottom: 0;
+  }
+  .olahraga2 {
+    width: 100%;
+    height: 10rem;
+    background-image: url(assets/foto/keamanan.jpg);
+    background-size: cover;
+    background-position: 0, 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .olahraga2 .judul {
+    color: var(--bs-light);
+    font-size: 20pt;
+    z-index: 1;
+    position: relative;
+
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+  }
+  .olahraga2 .isi {
+    color: var(--bs-light);
+    font-size: 12pt;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+  }
+  .olahraga2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+  }
+  .olahraga3 {
+    width: 100%;
+    height: 10rem;
+    background-image: url(assets/foto/share-host-3.jpg);
+    background-size: cover;
+    background-position: 0, 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .olahraga3 .judul {
+    color: var(--bs-light);
+    font-size: 20pt;
+    z-index: 1;
+    position: relative;
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+  }
+  .olahraga3 .isi {
+    color: var(--bs-light);
+    font-size: 12pt;
+    z-index: 1;
+    position: relative;
+
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .olahraga3::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+  }
+  .olahraga4 {
+    width: 100%;
+    height: 10rem;
+    background-image: url(assets/foto/performance.jpg);
+    background-size: cover;
+    background-position: 0, 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .olahraga4 .judul {
+    color: var(--bs-light);
+    font-size: 20pt;
+    z-index: 1;
+    position: relative;
+
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+  }
+  .olahraga4 .isi {
+    color: var(--bs-light);
+    font-size: 12pt;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+  }
+  .olahraga4::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+  }
+  .bi-cart,
+  .bi-search {
+    display: none;
+  }
+  /* selesai category */
+  /* buat testimoni */
+}
+/* selesai hp */
+/* buat tablet */
+@media (min-width: 576px) and (max-width: 992px) {
+  .jumbotron {
+    background-image: url(assets/foto/network.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: 20%, 0;
+    position: relative;
+  }
+  .display-4 {
+    padding-top: 25%;
+  }
+  .display-4,
+  .lead {
+    color: var(--bs-light);
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .jumbotron::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+  }
+  .jumbotron .container {
+    z-index: 1;
+    position: relative;
+  }
+  /* buat category */
+  .olahraga1 {
+    width: 100%;
+    height: 10rem;
+    background-image: url(assets/foto/internet\ speed.jpg);
+    background-size: cover;
+    background-position: 0, 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .olahraga1 .judul {
+    color: var(--bs-light);
+    font-size: 20pt;
+    z-index: 1;
+    position: relative;
+
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+  }
+  .olahraga1 .isi {
+    font-size: 12pt;
+    z-index: 1;
+    position: relative;
+    color: var(--bs-light);
+    text-align: center;
+
+    text-transform: capitalize;
+  }
+  .olahraga1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
+    position: absolute;
+    bottom: 0;
+  }
+  .olahraga2 {
+    width: 100%;
+    height: 10rem;
+    background-image: url(assets/foto/keamanan.jpg);
+    background-size: cover;
+    background-position: 0, 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .olahraga2 .judul {
+    color: var(--bs-light);
+    font-size: 20pt;
+    z-index: 1;
+    position: relative;
+
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+  }
+  .olahraga2 .isi {
+    color: var(--bs-light);
+    font-size: 12pt;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+  }
+  .olahraga2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+  }
+  .olahraga3 {
+    width: 100%;
+    height: 10rem;
+    background-image: url(assets/foto/share-host-3.jpg);
+    background-size: cover;
+    background-position: 0, 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .olahraga3 .judul {
+    color: var(--bs-light);
+    font-size: 20pt;
+    z-index: 1;
+    position: relative;
+
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+  }
+  .olahraga3 .isi {
+    color: var(--bs-light);
+    font-size: 12pt;
+    z-index: 1;
+    position: relative;
+
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .olahraga3::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+  }
+  .olahraga4 {
+    width: 100%;
+    height: 10rem;
+    background-image: url(assets/foto/performance.jpg);
+    background-size: cover;
+    background-position: 0, 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .olahraga4 .judul {
+    color: var(--bs-light);
+    font-size: 20pt;
+    z-index: 1;
+    position: relative;
+
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+  }
+  .olahraga4 .isi {
+    color: var(--bs-light);
+    font-size: 12pt;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+  }
+  .olahraga4::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+  }
+  .bi-cart,
+  .bi-search {
+    display: none;
+  }
+  /* selesai category */
+}
+/* selesai tablet */
+/* buat desktop */
+@media (min-width: 992px) {
+  /* buat tombol */
+  a.tombol {
+    border-radius: 40px;
+    border: none;
+  }
+  .bi {
+    color: var(--bs-light);
+    margin-right: 10px;
+    text-transform: capitalize;
+  }
+  .bi-cart {
+    font-style: normal;
+  }
+  /* buat navlink */
+  .nav-link {
+    margin-right: 30px;
+  }
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid var(--bs-primary);
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  /* buat jumbotron */
+  .jumbotron {
+    background-image: url(assets/foto/network.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: 0, 50%;
+    position: relative;
+  }
+  .jumbotron::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+  }
+  .jumbotron .container {
+    z-index: 1;
+    position: relative;
+  }
+  .display-4 {
+    padding-top: 20%;
+  }
+  .display-4,
+  .lead {
+    color: var(--bs-light);
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  /* buat category */
+  .olahraga1 {
+    width: 100%;
+    height: 10rem;
+    background-image: url(assets/foto/internet\ speed.jpg);
+    background-size: cover;
+    background-position: 0, 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+  }
+  .olahraga1 .judul {
+    color: var(--bs-light);
+    font-size: 30pt;
+    z-index: 1;
+    position: relative;
+    right: 7rem;
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+  }
+  .olahraga1 .isi {
+    font-size: 12pt;
+    z-index: 1;
+    position: relative;
+    color: var(--bs-light);
+    text-align: end;
+    right: 7rem;
+    text-transform: capitalize;
+  }
+  .olahraga1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
+    position: absolute;
+    bottom: 0;
+  }
+  .olahraga2 {
+    width: 100%;
+    height: 10rem;
+    background-image: url(assets/foto/keamanan.jpg);
+    background-size: cover;
+    background-position: 0, 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+  }
+  .olahraga2 .judul {
+    color: var(--bs-light);
+    font-size: 30pt;
+    z-index: 1;
+    position: relative;
+    left: 7rem;
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+  }
+  .olahraga2 .isi {
+    color: var(--bs-light);
+    font-size: 12pt;
+    z-index: 1;
+    position: relative;
+    left: 7rem;
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+  }
+  .olahraga2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+  }
+  .olahraga3 {
+    width: 100%;
+    height: 10rem;
+    background-image: url(assets/foto/share-host-3.jpg);
+    background-size: cover;
+    background-position: 0, 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+  }
+  .olahraga3 .judul {
+    color: var(--bs-light);
+    font-size: 30pt;
+    z-index: 1;
+    position: relative;
+    right: 7rem;
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+  }
+  .olahraga3 .isi {
+    color: var(--bs-light);
+    font-size: 12pt;
+    z-index: 1;
+    position: relative;
+    right: 7rem;
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+    text-align: end;
+  }
+  .olahraga3::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+  }
+  .olahraga4 {
+    width: 100%;
+    height: 10rem;
+    background-image: url(assets/foto/performance.jpg);
+    background-size: cover;
+    background-position: 0, 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+  }
+  .olahraga4 .judul {
+    color: var(--bs-light);
+    font-size: 30pt;
+    z-index: 1;
+    position: relative;
+    left: 7rem;
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+  }
+  .olahraga4 .isi {
+    color: var(--bs-light);
+    font-size: 12pt;
+    z-index: 1;
+    position: relative;
+    left: 7rem;
+    text-shadow: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+  }
+  .olahraga4::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+  }
+
+  /* selesai category */
+}
+/* selesai desktop */
+#testimoni .container .testimoni {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* bikin produk */
+
+/* selesai produk */
